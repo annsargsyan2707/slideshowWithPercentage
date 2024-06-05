@@ -1,0 +1,94 @@
+.slider {
+  width: 600px;
+  height: 400px;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.slider_images {
+  width: 600px;
+  height: 300px;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+button:first-of-type {
+  top: 150px;
+  left: 0;
+  position: absolute;
+  background-color: inherit;
+  color: #f1f1f1;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+}
+button:last-of-type {
+  top: 150px;
+  right: 0;
+  position: absolute;
+  background-color: inherit;
+  color: #f1f1f1;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 10px;
+  margin-top: 10px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  -webkit-appearance: none; /* Убираем стандартный стиль для WebKit браузеров */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 100px;
+  height: 10px;
+  border-radius: 5px;
+  background: rgb(75, 73, 73);
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  appearance: none;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  background: rgb(75, 73, 73);
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+  appearance: none;
+  width: 100px;
+  height: 10px;
+  border-radius: 5px;
+  background: rgb(75, 73, 73);
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc; /* Цвет полосы прокрутки */
+  border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc; /* Цвет полосы прокрутки в Firefox */
+  border-radius: 5px;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc; /* Цвет полосы прокрутки в Internet Explorer */
+  border-radius: 5px;
+}
